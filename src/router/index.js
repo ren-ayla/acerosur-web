@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 // Crearemos este componente en el paso 3
 import HomeView from '../views/HomeView.vue' 
+import AboutView from '../views/AboutView.vue'
+import ProjectsView from '../views/ProjectsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,10 +12,25 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
       meta: { 
-        title: 'Inicio - Maestranza Acero Sur' // Para SEO básico después
+        title: 'Maestranza Acero Sur Chile - Home' // Para SEO básico después
       }
     },
-    // Si necesitas más vistas, las agregamos aquí
+    {
+      path: '/nosotros',
+      name: 'nosotros',
+      component: AboutView,
+      meta: { 
+        title: 'Maestranza Acero Sur Chile - Nosotros' // Para SEO básico después
+      }
+    },
+    {
+      path: '/proyectos',
+      name: 'proyectos',
+      component: ProjectsView,
+      meta: { 
+        title: 'Maestranza Acero Sur Chile - Galería de Proyectos' // Para SEO básico después
+      }
+    },
   ],
   // Esto es para que al cambiar de página, el scroll vuelva arriba siempre
   scrollBehavior(to, from, savedPosition) {

@@ -9,9 +9,9 @@ const slides = [
     title: "MAESTRANZA ACERO SUR",
     subtitle: "14 años de trayectoria ininterrumpida. Líderes en soluciones de fabricación industrial, excelencia técnica y compromiso sólido.",
     // 👇 AQUÍ ESTÁ EL CAMBIO MÁGICO
-    image: new URL('../assets/img/carousel/hero-1.png', import.meta.url).href, 
+    image: new URL('../assets/img/carousel/hero-1.webp', import.meta.url).href, 
     linkText: "Conoce nuestra Historia",
-    linkUrl: "#nosotros"
+    linkUrl: "/nosotros"
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const slides = [
     title: "INFRAESTRUCTURA INDUSTRIAL",
     subtitle: "Especialistas en montaje de galpones de gran envergadura y obras complejas. Eficiencia, seguridad y durabilidad garantizada.",
     // 👇 FOTO LOCAL 2
-    image: new URL('../assets/img/carousel/hero-2.png', import.meta.url).href,
+    image: new URL('../assets/img/carousel/hero-2.webp', import.meta.url).href,
     linkText: "Nuestros Servicios",
     linkUrl: "#servicios"
   },
@@ -32,12 +32,12 @@ const slides = [
     subtitle: "Visualice la solidez de nuestras obras realizadas para la gran minería e industria privada.",
     // 👇 ARRAY DE FOTOS LOCALES PARA EL COLLAGE
     images: [
-      new URL('../assets/img/carousel/collage-1.png', import.meta.url).href,
-      new URL('../assets/img/carousel/collage-2.png', import.meta.url).href,
-      new URL('../assets/img/carousel/collage-3.png', import.meta.url).href
+      new URL('../assets/img/carousel/collage-1.webp', import.meta.url).href,
+      new URL('../assets/img/carousel/collage-2.webp', import.meta.url).href,
+      new URL('../assets/img/carousel/collage-3.webp', import.meta.url).href
     ],
     linkText: "Ver Galería",
-    linkUrl: "#proyectos"
+    linkUrl: "/proyectos"
   }
 ]
 
@@ -173,6 +173,7 @@ onUnmounted(() => { stopAutoPlay() })
   background-color: #6CAB3D; /* Tu verde brillante */
   margin-right: 25px; /* Separación con el texto */
   box-shadow: 0 0 15px rgba(108, 171, 61, 0.6); /* Glow sutil */
+  flex-shrink: 0;
 }
 
 .text-block {
@@ -297,6 +298,9 @@ onUnmounted(() => { stopAutoPlay() })
   .item-1 { grid-column: 1; grid-row: 1; border-right: none; }
   .item-2 { grid-column: 1; grid-row: 2; }
   .item-3 { grid-column: 1; grid-row: 3; }
+  .nav-btn {
+    display: none;
+  }
 }
 
 /* Agrega esto a tu CSS */
