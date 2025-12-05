@@ -57,7 +57,7 @@ onUnmounted(() => { document.removeEventListener('click', handleClickOutside) })
   <nav ref="navbarRef" class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
     <div class="container">
       
-      <RouterLink class="navbar-brand p-0" href="/" @click="closeMenu">
+      <RouterLink class="navbar-brand p-0" to="/" @click="closeMenu">
         <img :src="logoUrl" alt="Logo Acero Sur" class="navbar-logo">
       </RouterLink>
 
@@ -120,7 +120,7 @@ onUnmounted(() => { document.removeEventListener('click', handleClickOutside) })
           </li>
 
           <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
-            <RouterLink href="/#contacto" class="nav-link contact-link text-uppercase" @click="closeMenu">
+            <RouterLink to="/#contacto" class="nav-link contact-link text-uppercase" @click="closeMenu">
               Contacto
             </RouterLink>
           </li>

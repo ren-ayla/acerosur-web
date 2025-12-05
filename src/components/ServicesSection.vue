@@ -70,7 +70,7 @@ const services = [
               <p class="card-text">{{ item.text }}</p>
 
               <div class="mt-auto pt-3 border-top-dashed">
-                <RouterLink :href="item.linkUrl" class="btn-contact">
+                <RouterLink :to="item.linkUrl" class="btn-contact">
                   {{ item.linkText }} <i class="bi bi-arrow-right-short icon-arrow"></i>
                 </RouterLink>
               </div>
