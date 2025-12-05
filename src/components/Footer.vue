@@ -44,14 +44,14 @@ onUnmounted(() => { window.removeEventListener('scroll', handleScroll) })
         <div class="col-lg-3">
           <h6 class="footer-title">ENLACES RÁPIDOS</h6>
           <ul class="footer-links list-unstyled">
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/nosotros">Historia</a></li>
-            <li><a href="/#experiencia">Experiencia</a></li>
-            <li><a href="/#servicios">Servicios</a></li>
-            <li><a href="/proyectos">Proyectos</a></li>
-            <li><a href="/#contacto">Contacto</a></li>
+<li><RouterLink to="/">Inicio</RouterLink></li>
+  <li><RouterLink to="/nosotros">Historia</RouterLink></li>
+  <li><RouterLink to="/#experiencia">Experiencia</RouterLink></li>
+  <li><RouterLink to="/#servicios">Servicios</RouterLink></li>
+  <li><RouterLink to="/proyectos">Proyectos</RouterLink></li>
+  <li><RouterLink to="/#contacto">Contacto</RouterLink></li>
             <li>
-              <a href="https://acerosurchile.cl/webmail" target="_blank" class="webmail-link">
+              <a href="https://acerosurchile.cl/webmail" target="_blank" class="webmail-link" rel="noopener noreferrer">
                 <i class="bi bi-lock-fill me-1"></i> Webmail
               </a>
             </li>

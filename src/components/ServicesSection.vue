@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from 'vue-router';
+
 const services = [
   {
     id: 1,
@@ -68,9 +70,9 @@ const services = [
               <p class="card-text">{{ item.text }}</p>
 
               <div class="mt-auto pt-3 border-top-dashed">
-                <a :href="item.linkUrl" class="btn-contact">
+                <RouterLink :href="item.linkUrl" class="btn-contact">
                   {{ item.linkText }} <i class="bi bi-arrow-right-short icon-arrow"></i>
-                </a>
+                </RouterLink>
               </div>
             </div>
             

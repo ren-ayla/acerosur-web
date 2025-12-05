@@ -57,9 +57,9 @@ onUnmounted(() => { document.removeEventListener('click', handleClickOutside) })
   <nav ref="navbarRef" class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
     <div class="container">
       
-      <a class="navbar-brand p-0" href="/" @click="closeMenu">
+      <RouterLink class="navbar-brand p-0" href="/" @click="closeMenu">
         <img :src="logoUrl" alt="Logo Acero Sur" class="navbar-logo">
-      </a>
+      </RouterLink>
 
       <button 
         class="navbar-toggler border-0" 
@@ -79,14 +79,14 @@ onUnmounted(() => { document.removeEventListener('click', handleClickOutside) })
             :key="item.name"
             :class="{ 'dropdown-container': item.children }"
           >
-            <a 
-              v-if="!item.children"
-              class="nav-link px-3 text-uppercase" 
-              :href="item.link" 
-              @click="closeMenu"
-            >
-              {{ item.name }}
-            </a>
+<RouterLink 
+  v-if="!item.children"
+  class="nav-link px-3 text-uppercase" 
+  :to="item.link" 
+  @click="closeMenu"
+>
+  {{ item.name }}
+</RouterLink>
 
             <div v-else class="dropdown-wrapper">
               <a 
@@ -106,13 +106,13 @@ onUnmounted(() => { document.removeEventListener('click', handleClickOutside) })
               <transition name="fade">
                 <ul v-if="activeDropdown === index" class="custom-dropdown-menu shadow-sm">
                   <li v-for="child in item.children" :key="child.name">
-                    <a 
-                      class="dropdown-item text-uppercase" 
-                      :href="child.link"
-                      @click="closeMenu"
-                    >
-                      {{ child.name }}
-                    </a>
+<RouterLink 
+  class="dropdown-item text-uppercase" 
+  :to="child.link"
+  @click="closeMenu"
+>
+  {{ child.name }}
+</RouterLink>
                   </li>
                 </ul>
               </transition>
@@ -120,9 +120,9 @@ onUnmounted(() => { document.removeEventListener('click', handleClickOutside) })
           </li>
 
           <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
-            <a href="/#contacto" class="nav-link contact-link text-uppercase" @click="closeMenu">
+            <RouterLink href="/#contacto" class="nav-link contact-link text-uppercase" @click="closeMenu">
               Contacto
-            </a>
+            </RouterLink>
           </li>
 
         </ul>

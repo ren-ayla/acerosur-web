@@ -111,9 +111,9 @@ onUnmounted(() => { stopAutoPlay() })
                 {{ slide.subtitle }}
               </p>
               
-              <a :href="slide.linkUrl" class="hero-link delay-2">
+              <RouterLink :href="slide.linkUrl" class="hero-link delay-2">
                 {{ slide.linkText }}
-              </a>
+              </RouterLink>
             </div>
 
           </div>

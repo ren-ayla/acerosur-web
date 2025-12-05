@@ -28,7 +28,7 @@
               Fundada en <span class="fw-bold text-dark">abril de 2013</span>, Acero Sur EIRL nació con la vocación de convertirse en un referente de la industria metalmecánica. Con más de <span class="fw-bold text-dark">14 años de trayectoria ininterrumpida</span>, nos hemos consolidado como una empresa líder en la fabricación y montaje de estructuras para la gran minería, infraestructura y obras civiles a nivel nacional.
             </p>
             <p class="body-text">
-              Nuestra sello distintivo es la <span class="text-highlight fw-bold">excelencia técnica</span>. Cada proyecto que desarrollamos cumple con los más altos estándares de calidad, seguridad y precisión, reafirmando nuestro compromiso inquebrantable con las necesidades específicas de cada cliente.
+              Nuestro sello distintivo es la <span class="text-highlight fw-bold">excelencia técnica</span>. Cada proyecto que desarrollamos cumple con los más altos estándares de calidad, seguridad y precisión, reafirmando nuestro compromiso inquebrantable con las necesidades específicas de cada cliente.
             </p>
           </div>
 

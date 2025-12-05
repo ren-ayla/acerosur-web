@@ -53,7 +53,7 @@ const contactInfo = [
           class="col-md-6 col-lg-4"
         >
           
-          <a v-if="item.isLink" :href="item.link" target="_blank" class="card-wrapper-link">
+          <a v-if="item.isLink" :href="item.link" target="_blank" class="card-wrapper-link" rel="noopener noreferrer">
             <div class="contact-card h-100">
               <div class="icon-box mb-3">
                 <i :class="item.icon"></i>

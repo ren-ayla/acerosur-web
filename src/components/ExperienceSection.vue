@@ -51,9 +51,9 @@ const experiences = [
               <p class="card-text">{{ item.text }}</p>
 
               <div v-if="item.hasLink" class="mt-auto pt-3">
-                <a :href="item.linkUrl" class="btn-more">
+                <RouterLink :to="item.linkUrl" class="btn-more">
                   {{ item.linkText }} <span class="icon-arrow">→</span>
-                </a>
+                </RouterLink>
               </div>
             </div>
             
